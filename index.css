@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: hidden;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 100px;
+  transform-style: preserve-3d;
+  position: relative;
+  top: 1;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  scroll-behavior: smooth;
+  z-index: auto;
+}

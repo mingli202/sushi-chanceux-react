@@ -1,0 +1,27 @@
+.home-transition {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg)
+}
+
+.home-transition svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 180px;
+}
+
+.home-back {
+  transform: translate3d(0, 0, -50px) scale(1.51);
+}
+
+.home-mid {
+  transform: rotate(180deg) translate3d(0, 0, -30px) scale(1.31);
+}
+
+.home-front {
+  transform: rotate(180deg) translate3d(0, 0, -15px) scale(1.15);
+}

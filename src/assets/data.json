@@ -1,0 +1,100 @@
+[
+  {
+    "name": "KamiKaza Salmon",
+    "img": "images/futomaki.png",
+    "desc": [
+      "Salmon, Imitation crabmeat, Masago, Avocado, Cucumber, Tempura, Spicy mayo, Rice, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Boston",
+    "img": "images/boston.jpg",
+    "desc": [
+      "Shrimps, Imitation crabmeat, Masago, Cucumber, Rice, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Vegetarian",
+    "img": "images/vegetarian.jpg",
+    "desc": [
+      "Avocado, Cucumber, Carrot, Japanese pickled radish, Pepper, Tempura, Spicy mayo, Rice, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "California",
+    "img": "images/california.jpg",
+    "desc": [
+      "Imitation Crabmeat, Omelets, Masago, Avocado, Cucumber, Sesame seeds, Rice, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Spicy Salmon Out",
+    "img": "images/spicySalmon1.jpg",
+    "desc": [
+      "Salmon, Cucumber, Tempura, Spicy mayo, Rice outside, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Spicy Salmon In",
+    "img": "images/spicySalmon2.jpg",
+    "desc": [
+      "Salmon, Cucumber, Tempura, Spicy mayo, Rice inside, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Spicy Shrimp",
+    "img": "images/spicyShrimp.jpg",
+    "desc": [
+      "Shrimps, Imitation crabmeat, Masago, Cucumber, Tempura, Spicy mayo, Rice, Toasted seaweed"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Quebec",
+    "img": "images/quebec.jpg",
+    "desc": [
+      "Shrimps, Imitation Crabmeat, Masago, Cucumber, Avocado, Tempura, Spicy mayo, Rice, Rice pepper"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Fuji",
+    "img": "images/fuji.jpg",
+    "desc": [
+      "Smoked salmon, Shrimps, Imitation Crabmeat, Masago, Cucumber, Tempura, Spicy mayo, Rice, Rice pepper, Sesame seeds"
+    ],
+    "price": 15.99
+  },
+  {
+    "name": "Shooter",
+    "img": "images/shooter.jpg",
+    "desc": ["Shrimps, Imitation Crabmeat, Litchi, Sesame seeds"],
+    "price": 15.99
+  },
+  {
+    "name": "Combo 12",
+    "img": "images/combo12.jpg",
+    "desc": [
+      "2x Nigiri Salmon",
+      "2x Nigiri Shrimp",
+      "2x Futomaki Maki du chef"
+    ],
+    "price": 19.99
+  },
+  {
+    "name": "Combo 22",
+    "img": "images/combo22.jpg",
+    "desc": [
+      "2x Nigiri Salmon",
+      "2x Nigiri Shrimp",
+      "2x Futomaki Maki du chef"
+    ],
+    "price": 25.99
+  }
+]
