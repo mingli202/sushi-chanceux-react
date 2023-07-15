@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Nanoscience202/sushi-chanceux-react",
+  "homepage": "https://nanoscience202.github.io/sushi-chanceux-react/",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --repor  t-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
