@@ -1,7 +1,7 @@
 // TODO: Make this better styled skull emoji
 import { animated, useSpring } from "react-spring";
 import CarouselTxt from "./CarouselTxt";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 export default function AboutUs() {
   const [index, setIndex] = useState<number>(0);
@@ -65,5 +65,5 @@ const IMAGES = [
   "../src/assets/images/seefood.jpeg",
   "../src/assets/images/asian-culture.jpeg",
   "../src/assets/images/destination-gps.jpeg",
-  "../src/assets/images/art-of-sushi.jpeg"
+  "../src/assets/images/art-of-sushi.jpeg",
 ];
