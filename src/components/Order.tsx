@@ -72,7 +72,7 @@ export default function OrderSection() {
                 key={item.name}
               >
                 <img
-                  src={item.img}
+                  src={`/sushi-chanceux-react/${item.img}`}
                   alt={item.name}
                   className="aspect-square object-cover h-full rounded-l-[inherit]"
                 />

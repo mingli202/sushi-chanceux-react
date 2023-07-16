@@ -25,7 +25,7 @@ export default function Navbar() {
       <Link to="/sushi-chanceux-react/order">
         <button>
           <img
-            src="/Basket_alt_3@3x.png"
+            src="/sushi-chanceux-react/Basket_alt_3@3x.png"
             alt="Order"
             className="h-[5dvh] cursor-pointer hover:outline-c7 hover:outline-2 hover:outline active:outline-c5"
           />

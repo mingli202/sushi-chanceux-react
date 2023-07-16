@@ -24,7 +24,7 @@ export default function Menu() {
               >
                 <div className="rounded-xl basis-1/2 h-auto">
                   <img
-                    src={`/${item.img}`}
+                    src={`/sushi-chanceux-react/${item.img}`}
                     alt={`${item.name}`}
                     className="rounded-l-[inherit] object-cover min-h-full"
                   />

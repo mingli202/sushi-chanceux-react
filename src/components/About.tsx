@@ -50,7 +50,7 @@ export default function AboutUs() {
 
       <div className="h-full absolute top-0 right-0">
         <animated.img
-          src="/images/sushi-cook.jpg"
+          src="/sushi-chanceux-react/images/sushi-cook.jpg"
           className="object-cover h-full"
           style={{ ...spring }}
           ref={ref}
@@ -61,9 +61,9 @@ export default function AboutUs() {
 }
 
 const IMAGES = [
-  "/images/sushi-cook.jpg",
-  "/images/seefood.jpeg",
-  "/images/asian-culture.jpeg",
-  "/images/destination-gps.jpeg",
-  "/images/art-of-sushi.jpeg",
+  "/sushi-chanceux-react/images/sushi-cook.jpg",
+  "/sushi-chanceux-react/images/seefood.jpeg",
+  "/sushi-chanceux-react/images/asian-culture.jpeg",
+  "/sushi-chanceux-react/images/destination-gps.jpeg",
+  "/sushi-chanceux-react/images/art-of-sushi.jpeg",
 ];

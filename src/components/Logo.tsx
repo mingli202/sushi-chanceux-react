@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
     <img
-      src="/logo-transparent.png"
+      src="/sushi-chanceux-react/logo-transparent.png"
       alt="logo"
       className="h-[5dvh] cursor-pointer"
       onClick={() => {
