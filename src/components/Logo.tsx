@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
     <img
-      src="../src/assets/logo-transparent.png"
+      src="/logo-transparent.png"
       alt="logo"
       className="h-[5dvh] cursor-pointer"
       onClick={() => {

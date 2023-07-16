@@ -9,30 +9,30 @@ import { AboutUs, ContactUs, Home, OrderSection } from "./components";
 const router = createBrowserRouter(
   [
     {
-      path: "/react-vite-gh-pages/",
+      path: "/",
       element: <App />,
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/react-vite-gh-pages/",
+          path: "/",
           element: <Home />,
         },
         {
-          path: "/react-vite-gh-pages/contact",
+          path: "/contact",
           element: <ContactUs />,
         },
         {
-          path: "/react-vite-gh-pages/about",
+          path: "/about",
           element: <AboutUs />,
         },
         {
-          path: "/react-vite-gh-pages/order",
+          path: "/order",
           element: <OrderSection />,
         },
       ],
     },
   ],
-  { basename: "/react-vite-gh-pages/" }
+  // { basename: "/sushi-chanceux-react/" }
 );
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

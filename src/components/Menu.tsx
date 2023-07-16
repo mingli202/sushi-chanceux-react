@@ -6,7 +6,7 @@ export default function Menu() {
   const [menu, setMenu] = useState();
 
   useEffect(() => {
-    fetch("../src/assets/data.json")
+    fetch("/data.json")
       .then((res: Response) => {
         if (res.ok) {
           return res.json();
@@ -24,7 +24,7 @@ export default function Menu() {
               >
                 <div className="rounded-xl basis-1/2 h-auto">
                   <img
-                    src={`../src/assets/${item.img}`}
+                    src={`/${item.img}`}
                     alt={`${item.name}`}
                     className="rounded-l-[inherit] object-cover min-h-full"
                   />
@@ -41,7 +41,7 @@ export default function Menu() {
                     </p>
                   ))}
 
-                  {/* Price and counter */} 
+                  {/* Price and counter */}
                   <div className="flex justify-between items-end text-xl h-full mt-4">
                     <p className="text-c2">{`$${item.price}`}</p>
                     <Counter key={item.name} {...item} />
