@@ -7,4 +7,4 @@ This is a fun personal project made with React, Typescript and Tailwind. Other l
 * A cool home page with a beautiful menu section.
 * A contact us page (the only one you can reach out is me).
 * An about us page with some cool animations
-* An order page where you can see what you have ordered and place an order well (will not order anything in reality)
+* An order page where you can see what you have ordered and place an order (will not order anything in reality)
