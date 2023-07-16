@@ -14,19 +14,19 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/",
+          path: "/sushi-chanceux-react/",
           element: <Home />,
         },
         {
-          path: "/contact",
+          path: "/sushi-chanceux-react/contact",
           element: <ContactUs />,
         },
         {
-          path: "/about",
+          path: "/sushi-chanceux-react/about",
           element: <AboutUs />,
         },
         {
-          path: "/order",
+          path: "/sushi-chanceux-react/order",
           element: <OrderSection />,
         },
       ],
