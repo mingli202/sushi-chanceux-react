@@ -5,34 +5,30 @@ import { useRef, useState } from "react";
 
 export default function AboutUs() {
   const [index, setIndex] = useState<number>(0);
-  const ref = useRef<HTMLImageElement>(null);
 
-  const [spring, api] = useSpring(() => ({
-    opacity: 1,
-  }));
+  const images = useRef(
+    IMAGES.map((img, i) => {
+      return (
+        <Img
+          url={img}
+          key={`image-${i}`}
+          state={i === index ? "active" : "inactive"}
+        />
+      );
+    })
+  );
 
-  function handleImgChange(index: number) {
-    api.start({
-      from: {
-        opacity: 1,
-      },
-      to: {
-        opacity: 0,
-      },
-      onResolve: () => {
-        if (ref.current) {
-          ref.current.src = IMAGES[index];
-        }
+  function handleImgChange(current: number, next: number) {
+    images.current = IMAGES.map((img, i) => {
+      let state: "active" | "inactive" | "out" | "in" = "inactive";
 
-        api.start({
-          from: {
-            opacity: 0,
-          },
-          to: {
-            opacity: 1,
-          },
-        });
-      },
+      if (i === current) {
+        state = "out";
+      } else if (i === next) {
+        state = "in";
+      }
+
+      return <Img url={img} key={`image-${i}`} state={state} />;
     });
   }
 
@@ -48,15 +44,49 @@ export default function AboutUs() {
       </div>
       <div className="absolute top-[-25%] left-[50%] -ml-60 h-[150%] w-96 bg-primary z-[1] rounded-r-[100%_50%] blur-lg" />
 
-      <div className="h-full absolute top-0 right-0">
-        <animated.img
-          src="/sushi-chanceux-react/images/sushi-cook.jpg"
-          className="object-cover h-full"
-          style={{ ...spring }}
-          ref={ref}
-        />
-      </div>
+      {images.current}
     </section>
+  );
+}
+
+type ImgProps = {
+  url: string;
+  state: "active" | "inactive" | "out" | "in";
+};
+
+function Img({ url, state }: ImgProps) {
+  const [spring, api] = useSpring(() => ({
+    opacity: state === "inactive" ? 0 : 1,
+  }));
+
+  if (state === "out") {
+    api.start({
+      from: {
+        opacity: 1,
+      },
+      to: {
+        opacity: 0,
+      },
+    });
+  } else if (state === "in") {
+    api.start({
+      from: {
+        opacity: 0,
+      },
+      to: {
+        opacity: 1,
+      },
+    });
+  }
+
+  return (
+    <div className="h-full absolute top-0 right-0">
+      <animated.img
+        src={`${url}`}
+        className="object-cover h-full"
+        style={{ ...spring }}
+      />
+    </div>
   );
 }
 

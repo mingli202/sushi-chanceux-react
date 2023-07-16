@@ -6,7 +6,7 @@ import { animated, useSpring } from "react-spring";
 type Props = {
   index: number;
   setIndex: Dispatch<React.SetStateAction<number>>;
-  onClick: (index: number) => void;
+  onClick: (current: number, next: number) => void;
 };
 export default function CarouselTxt({ index, setIndex, onClick }: Props) {
   const [spring, controller] = useSpring(() => ({
@@ -16,7 +16,6 @@ export default function CarouselTxt({ index, setIndex, onClick }: Props) {
   function handleClick(n: number) {
     let nextIndex: number;
 
-    
     if (index + n >= TEXTS.length) {
       nextIndex = 0;
     } else if (index + n < 0) {
@@ -25,7 +24,7 @@ export default function CarouselTxt({ index, setIndex, onClick }: Props) {
       nextIndex = index + n;
     }
 
-    onClick(nextIndex);
+    onClick(index, nextIndex);
 
     controller.start({
       from: {
