@@ -9,30 +9,30 @@ import { AboutUs, ContactUs, Home, OrderSection } from "./components";
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/react-vite-gh-pages/",
       element: <App />,
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/",
+          path: "/react-vite-gh-pages/",
           element: <Home />,
         },
         {
-          path: "/contact",
+          path: "/react-vite-gh-pages/contact",
           element: <ContactUs />,
         },
         {
-          path: "/about",
+          path: "/react-vite-gh-pages/about",
           element: <AboutUs />,
         },
         {
-          path: "/order",
+          path: "/react-vite-gh-pages/order",
           element: <OrderSection />,
         },
       ],
     },
   ],
-  // { basename: import.meta.env.DEV ? "/" : "/react-vite-gh-pages/" }
+  { basename: "/react-vite-gh-pages/" }
 );
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
