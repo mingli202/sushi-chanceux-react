@@ -6,7 +6,7 @@ export default function Menu() {
   const [menu, setMenu] = useState();
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("/sushi-chanceux-react/data.json")
       .then((res: Response) => {
         if (res.ok) {
           return res.json();

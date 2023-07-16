@@ -9,7 +9,7 @@ import { AboutUs, ContactUs, Home, OrderSection } from "./components";
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/sushi-chanceux-react/",
       element: <App />,
       errorElement: <ErrorPage />,
       children: [
