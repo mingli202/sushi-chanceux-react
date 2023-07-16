@@ -115,7 +115,7 @@ export default function ContactUs() {
       </div>
 
       {/* Some other queries */}
-      <div className="basis-full text-c8 m-4 flex flex-col items-center text-xl justify-center">
+      <div className="basis-full text-c8 m-4 flex flex-col items-center text-xl justify-center relative">
         <i className="fa fa-phone text-9xl" />
         <p className="text-center mt-6 text-3xl">Call Us</p>
         <p className="text-center mt-6">
@@ -124,6 +124,7 @@ export default function ContactUs() {
           workers.
         </p>
         <p className="mt-6 font-bold mb-6">(514) 586-1268</p>
+        <p className="absolute text-xs bottom-0">Source code: https://github.com/Nanoscience202/sushi-chanceux-react</p>
       </div>
     </section>
   );
