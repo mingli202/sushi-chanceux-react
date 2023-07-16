@@ -37,7 +37,7 @@ export default function AboutUs() {
   }
 
   return (
-    <section className="w-[100dvw] h-[calc(100dvh-5dvh-3rem)] mt-[calc(5dvh+3rem)] bg-primary text-c8 box-border gap-4 relative">
+    <section className="w-[100dvw] h-[calc(100dvh-5dvh-3rem)] mt-[calc(5dvh+3rem)] bg-primary text-c8 box-border gap-4 relative overflow-hidden">
       <div className="text-xl w-[50%] flex flex-col justify-center box-border pl-28 z-10 relative h-full bg-primary shrink-0">
         <h1 className="text-7xl font-extrabold">About Us</h1>
         <CarouselTxt
