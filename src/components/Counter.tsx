@@ -60,7 +60,7 @@ export default function Counter({ name, price, img }: CounterProps) {
                     name: name,
                     price: price,
                     n: 1,
-                    img: `../src/assets/${img}`,
+                    img: `${img}`,
                   },
                 ]
           );
