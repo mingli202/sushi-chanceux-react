@@ -10,7 +10,7 @@ export default function ContactUs() {
   const [sending, setSending] = useState(false);
 
   function handleChange(
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) {
     const { name, value }: { name: string; value: string } = e.target;
     setForm({
@@ -34,7 +34,7 @@ export default function ContactUs() {
           to_email: "vincentmingli@gmail.com",
           message: form.message,
         },
-        "QLw-2olFqTFzTBHug"
+        "QLw-2olFqTFzTBHug",
       )
       .then(
         () => {
@@ -49,7 +49,7 @@ export default function ContactUs() {
         (error) => {
           console.log(error);
           alert("Something went wrong");
-        }
+        },
       );
   }
 
@@ -124,7 +124,9 @@ export default function ContactUs() {
           workers.
         </p>
         <p className="mt-6 font-bold mb-6">(514) 586-1268</p>
-        <p className="absolute text-xs bottom-0">Source code: https://github.com/Nanoscience202/sushi-chanceux-react</p>
+        <p className="absolute text-xs bottom-0">
+          Source code: https://github.com/mingli202/sushi-chanceux-react
+        </p>
       </div>
     </section>
   );
